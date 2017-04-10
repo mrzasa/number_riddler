@@ -7,7 +7,7 @@ module NumberRiddler
     end
 
     def encode(number)
-      digitalize(number).map { |digit| encoder.encode(digit) }
+      digitalize(number).map { |digit| encoder.call(digit) }
     end
 
     def digitalize(number)

@@ -14,7 +14,7 @@ module NumberRiddler
         '9' => 'number of fields in tic-tac-toe',
       }
 
-      def encode(digit)
+      def call(digit)
         CODE_BOOK[digit.to_s]
       end
     end

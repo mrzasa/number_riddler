@@ -1,7 +1,7 @@
 module NumberRiddler
   module Encoders
     class Test
-      def encode(digit)
+      def call(digit)
         (digit + 'a'.ord).chr
       end
     end
