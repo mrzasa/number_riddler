@@ -1,9 +1,9 @@
 require "spec_helper"
 
-RSpec.describe Riddler::FlexibleEncoder do
+RSpec.describe NumberRiddler::Encoders::Flexible do
   let(:twos) { [ "this is two", "this is another two" ] }
   let(:encoder) do
-    encoder = Riddler::FlexibleEncoder.new
+    encoder = subject
     encoder.add '1' => "that's just one"
     encoder.add '2' => twos
     encoder.add '3' => lambda { "lambda result" }
