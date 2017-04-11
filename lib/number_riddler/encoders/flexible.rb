@@ -21,12 +21,12 @@ module NumberRiddler
 
       private
 
-      def dispatch(value, digit)
-        item = value.sample
-        if item.is_a? Proc
-          return item.call digit
+      def dispatch(descriptions, digit)
+        desc = descriptions.sample
+        if desc.is_a? Proc
+          return desc.call digit
         end
-        return item
+        return desc
       end
     end
 
